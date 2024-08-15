@@ -1,50 +1,92 @@
+<!-- Load static files -->
 {% load static %}
+
+<!-- Define the HTML document -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Set the title of the page -->
     <title>Geometry Calculator</title>
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    
+    <!-- Link to external JavaScript file -->
     <script src="{% static 'main.js' %}" defer></script>
+    
+    <!-- Link to jQuery library -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
+
+<!-- Define the body of the HTML document -->
 <body>
+    <!-- Container element for the calculator -->
     <div class="container">
+        <!-- Box element for circle calculations -->
         <div class="box">
+            <!-- Button to toggle circle calculations -->
             <div id="circlePress">Circle</div>
+            <!-- Toggle element for circle calculations -->
             <div id="toggleCircle" class="toggle">
+                <!-- Input field for circle radius -->
                 <input type="text" id="userInput" placeholder="Radius:">
+                <!-- Button to calculate circle area and perimeter -->
                 <input type="button" value="Calc" id="button1">
+                <!-- Input fields to display circle area and perimeter -->
                 <input type="text" id="circleArea" placeholder="Circle Area">
                 <input type="text" id="circlePerimeter" placeholder="Circle Perimeter">
             </div>
         </div>
+        
+        <!-- Box element for rectangle calculations -->
         <div class="box">
+            <!-- Button to toggle rectangle calculations -->
             <div id="rectanglePress">Rectangle</div>
+            <!-- Toggle element for rectangle calculations -->
             <div id="toggleRectangle" class="toggle">
+                <!-- Input fields for rectangle length and width -->
                 <input type="text" id="rectangleInputLength" placeholder="Length:">
                 <input type="text" id="rectangleInputWidth" placeholder="Width:">
+                <!-- Button to calculate rectangle area and perimeter -->
                 <input type="button" value="Calc" id="button2">
+                <!-- Input fields to display rectangle area and perimeter -->
                 <input type="text" id="rectangleArea" placeholder="Rectangle Area">
                 <input type="text" id="rectanglePerimeter" placeholder="Rectangle Perimeter">
             </div>
         </div>
+        
+        <!-- Box element for square calculations -->
         <div class="box">
+            <!-- Button to toggle square calculations -->
             <div id="squarePress">Square</div>
+            <!-- Toggle element for square calculations -->
             <div id="toggleSquare" class="toggle">
+                <!-- Input field for square side length -->
                 <input type="text" id="squareInputSide" placeholder="Side:">
+                <!-- Button to calculate square area and perimeter -->
                 <input type="button" value="Calc" id="button3">
+                <!-- Input fields to display square area and perimeter -->
                 <input type="text" id="squareArea" placeholder="Square Area">
                 <input type="text" id="squarePerimeter" placeholder="Square Perimeter">
             </div>
         </div>
+        
+        <!-- Box element for triangle calculations -->
         <div class="box">
+            <!-- Button to toggle triangle calculations -->
             <div id="trianglePress">Triangle</div>
+            <!-- Toggle element for triangle calculations -->
             <div id="toggleTriangle" class="toggle">
+                <!-- Input fields for triangle base and height -->
                 <input type="text" id="triangleInputBase" placeholder="Base:">
                 <input type="text" id="triangleInputHeight" placeholder="Height:">
+                <!-- Button to calculate triangle area and perimeter -->
                 <input type="button" value="Calc" id="button4">
+                <!-- Input fields to display triangle area and perimeter -->
                 <input type="text" id="triangleArea" placeholder="Triangle Area">
                 <input type="text" id="trianglePerimeter" placeholder="Triangle Perimeter">
             </div>

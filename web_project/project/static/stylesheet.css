@@ -1,73 +1,86 @@
-/* Global Styles */
-
+/* Global Styles
+----------------------------------*/
 * {
+    /* Reset box model and remove default margins and padding */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body, html {
+}
+
+body, html {
+    /* Set full height and font family for body and html elements */
     height: 100%;
     font-family: Arial, sans-serif;
-  }
-  
-  /* Container Styles */
-  
-  .container {
+}
+
+/* Container Styles
+----------------------------------*/
+.container {
+    /* Create a grid container with 4 columns, 220px wide each, and 20px gap between them */
     display: grid;
     grid-template-columns: repeat(4, 220px);
     grid-gap: 20px;
+    /* Center the container horizontally and vertically */
     justify-content: center;
     align-items: center;
+    /* Add margin to the container */
     margin: 40px;
-  }
-  
-  /* Box Styles */
-  
-  .box {
+}
+
+/* Box Styles
+----------------------------------*/
+.box {
+    /* Set background color, text color, padding, font size, and border radius for boxes */
     background-color: #4CAF50;
     color: #fff;
     padding: 20px;
     font-size: 20px;
     border-radius: 8px;
+    /* Add a subtle box shadow */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .box:hover {
+}
+
+.box:hover {
+    /* Increase box shadow on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Toggle Styles */
-  
-  .toggle {
+}
+
+/* Toggle Styles
+----------------------------------*/
+.toggle {
+    /* Add margin top and center text for toggle elements */
     margin-top: 10px;
     text-align: center;
     display: block;
-  }
-  
-  /* Input Styles */
-  
-  input[type="text"],
-  input[type="button"] {
+}
+
+/* Input Styles
+----------------------------------*/
+input[type="text"],
+input[type="button"] {
+    /* Set margin bottom, padding, and font size for input fields and buttons */
     margin-bottom: 10px;
     padding: 8px;
     font-size: 16px;
     border-radius: 4px;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
+    /* Set width, border, and padding for text input fields */
     width: 180px;
     border: 1px solid #ccc;
-  }
-  
-  input[type="button"] {
+}
+
+input[type="button"] {
+    /* Set width, cursor, border, background color, and text color for buttons */
     width: 100px;
     cursor: pointer;
     border: none;
     background-color: #333;
     color: #fff;
-  }
-  
-  input[type="button"]:hover {
+}
+
+input[type="button"]:hover {
+    /* Change background color on hover */
     background-color: #444;
-  }
+}
