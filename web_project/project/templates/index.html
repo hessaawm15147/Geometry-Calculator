@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    <script src="{% static 'main.js' %}" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="circlePress">Circle</div>
+            <div id="toggleCircle" class="toggle">
+                <input type="text" id="userInput" placeholder="Radius:">
+                <input type="button" value="Calc" id="button1">
+                <input type="text" id="circleArea" placeholder="Circle Area">
+                <input type="text" id="circlePerimeter" placeholder="Circle Perimeter">
+            </div>
+        </div>
+        <div class="box">
+            <div id="rectanglePress">Rectangle</div>
+            <div id="toggleRectangle" class="toggle">
+                <input type="text" id="rectangleInputLength" placeholder="Length:">
+                <input type="text" id="rectangleInputWidth" placeholder="Width:">
+                <input type="button" value="Calc" id="button2">
+                <input type="text" id="rectangleArea" placeholder="Rectangle Area">
+                <input type="text" id="rectanglePerimeter" placeholder="Rectangle Perimeter">
+            </div>
+        </div>
+        <div class="box">
+            <div id="squarePress">Square</div>
+            <div id="toggleSquare" class="toggle">
+                <input type="text" id="squareInputSide" placeholder="Side:">
+                <input type="button" value="Calc" id="button3">
+                <input type="text" id="squareArea" placeholder="Square Area">
+                <input type="text" id="squarePerimeter" placeholder="Square Perimeter">
+            </div>
+        </div>
+        <div class="box">
+            <div id="trianglePress">Triangle</div>
+            <div id="toggleTriangle" class="toggle">
+                <input type="text" id="triangleInputBase" placeholder="Base:">
+                <input type="text" id="triangleInputHeight" placeholder="Height:">
+                <input type="button" value="Calc" id="button4">
+                <input type="text" id="triangleArea" placeholder="Triangle Area">
+                <input type="text" id="trianglePerimeter" placeholder="Triangle Perimeter">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
